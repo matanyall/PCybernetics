@@ -34,6 +34,8 @@
 		F75B0BB9205531BC00426A42 /* settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F75B0BB7205531BC00426A42 /* settings@2x.png */; };
 		F75B0BBA205531BC00426A42 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = F75B0BB8205531BC00426A42 /* settings.png */; };
 		F75B0BBC2055325800426A42 /* ClothingItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75B0BBB2055325800426A42 /* ClothingItemController.swift */; };
+		F75B0BBF2055390E00426A42 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75B0BBE2055390E00426A42 /* FilterViewController.swift */; };
+		F75B0BC120553AF700426A42 /* ShippoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75B0BC020553AF700426A42 /* ShippoController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +70,8 @@
 		F75B0BB7205531BC00426A42 /* settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings@2x.png"; sourceTree = "<group>"; };
 		F75B0BB8205531BC00426A42 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 		F75B0BBB2055325800426A42 /* ClothingItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothingItemController.swift; sourceTree = "<group>"; };
+		F75B0BBE2055390E00426A42 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		F75B0BC020553AF700426A42 /* ShippoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShippoController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +178,7 @@
 		F75427242054D073002BEB45 /* Puchase */ = {
 			isa = PBXGroup;
 			children = (
+				F75B0BBD205538FA00426A42 /* Filter View Controller */,
 				F754271F2054C87A002BEB45 /* PurchaseViewController.swift */,
 			);
 			path = Puchase;
@@ -223,6 +228,7 @@
 			children = (
 				F754272E2054E36A002BEB45 /* UserDefaultsController.swift */,
 				F75B0BBB2055325800426A42 /* ClothingItemController.swift */,
+				F75B0BC020553AF700426A42 /* ShippoController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -253,6 +259,14 @@
 				F75427422055093E002BEB45 /* MyItemsViewController_TableView.swift */,
 			);
 			path = "My Items";
+			sourceTree = "<group>";
+		};
+		F75B0BBD205538FA00426A42 /* Filter View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F75B0BBE2055390E00426A42 /* FilterViewController.swift */,
+			);
+			path = "Filter View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -408,10 +422,12 @@
 				F75427412055056B002BEB45 /* MyItemsViewController.swift in Sources */,
 				F754272F2054E36A002BEB45 /* UserDefaultsController.swift in Sources */,
 				F754273A2054F462002BEB45 /* SplitRow.swift in Sources */,
+				F75B0BBF2055390E00426A42 /* FilterViewController.swift in Sources */,
 				F75427052054C7A4002BEB45 /* AppDelegate.swift in Sources */,
 				F754273B2054F462002BEB45 /* SplitRowCell.swift in Sources */,
 				F75427432055093E002BEB45 /* MyItemsViewController_TableView.swift in Sources */,
 				F75427322054EFA6002BEB45 /* ClothingItem.swift in Sources */,
+				F75B0BC120553AF700426A42 /* ShippoController.swift in Sources */,
 				F754273D2054F462002BEB45 /* SplitRowValue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

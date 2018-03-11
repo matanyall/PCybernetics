@@ -120,7 +120,7 @@ class DonateViewController: FormViewController
             }
         }
         <<< ColorPickerRow("shirtColor") { row in
-            row.title = "Color"
+            row.title = "Dominant Color"
             row.isCircular = true
             row.showsCurrentSwatch = true
             row.showsPaletteNames = false
