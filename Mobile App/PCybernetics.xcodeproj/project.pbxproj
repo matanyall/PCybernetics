@@ -16,6 +16,17 @@
 		F754271E2054C866002BEB45 /* DonateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F754271D2054C866002BEB45 /* DonateViewController.swift */; };
 		F75427202054C87A002BEB45 /* PurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F754271F2054C87A002BEB45 /* PurchaseViewController.swift */; };
 		F75427222054C88C002BEB45 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75427212054C88C002BEB45 /* SettingsViewController.swift */; };
+		F75427282054DA95002BEB45 /* shirt.png in Resources */ = {isa = PBXBuildFile; fileRef = F75427272054DA95002BEB45 /* shirt.png */; };
+		F754272B2054DB47002BEB45 /* box.png in Resources */ = {isa = PBXBuildFile; fileRef = F754272A2054DB47002BEB45 /* box.png */; };
+		F754272F2054E36A002BEB45 /* UserDefaultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F754272E2054E36A002BEB45 /* UserDefaultsController.swift */; };
+		F75427322054EFA6002BEB45 /* ClothingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75427312054EFA6002BEB45 /* ClothingItem.swift */; };
+		F754273A2054F462002BEB45 /* SplitRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75427342054F462002BEB45 /* SplitRow.swift */; };
+		F754273B2054F462002BEB45 /* SplitRowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75427352054F462002BEB45 /* SplitRowCell.swift */; };
+		F754273C2054F462002BEB45 /* SplitRowCellTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75427362054F462002BEB45 /* SplitRowCellTableView.swift */; };
+		F754273D2054F462002BEB45 /* SplitRowValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75427372054F462002BEB45 /* SplitRowValue.swift */; };
+		F75427412055056B002BEB45 /* MyItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75427402055056B002BEB45 /* MyItemsViewController.swift */; };
+		F75427432055093E002BEB45 /* MyItemsViewController_TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75427422055093E002BEB45 /* MyItemsViewController_TableView.swift */; };
+		F754274520550971002BEB45 /* ClothingItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F754274420550971002BEB45 /* ClothingItemTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +43,17 @@
 		F754271D2054C866002BEB45 /* DonateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateViewController.swift; sourceTree = "<group>"; };
 		F754271F2054C87A002BEB45 /* PurchaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseViewController.swift; sourceTree = "<group>"; };
 		F75427212054C88C002BEB45 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		F75427272054DA95002BEB45 /* shirt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shirt.png; sourceTree = "<group>"; };
+		F754272A2054DB47002BEB45 /* box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = box.png; sourceTree = "<group>"; };
+		F754272E2054E36A002BEB45 /* UserDefaultsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsController.swift; sourceTree = "<group>"; };
+		F75427312054EFA6002BEB45 /* ClothingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothingItem.swift; sourceTree = "<group>"; };
+		F75427342054F462002BEB45 /* SplitRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitRow.swift; sourceTree = "<group>"; };
+		F75427352054F462002BEB45 /* SplitRowCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitRowCell.swift; sourceTree = "<group>"; };
+		F75427362054F462002BEB45 /* SplitRowCellTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitRowCellTableView.swift; sourceTree = "<group>"; };
+		F75427372054F462002BEB45 /* SplitRowValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitRowValue.swift; sourceTree = "<group>"; };
+		F75427402055056B002BEB45 /* MyItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyItemsViewController.swift; sourceTree = "<group>"; };
+		F75427422055093E002BEB45 /* MyItemsViewController_TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyItemsViewController_TableView.swift; sourceTree = "<group>"; };
+		F754274420550971002BEB45 /* ClothingItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothingItemTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +106,9 @@
 		F75427032054C7A4002BEB45 /* PCybernetics */ = {
 			isa = PBXGroup;
 			children = (
+				F75427302054EF9D002BEB45 /* Models */,
+				F754272D2054E355002BEB45 /* Controllers */,
+				F754272C2054DC67002BEB45 /* Custom Views */,
 				F75427182054C7F7002BEB45 /* View Controllers */,
 				F754271A2054C819002BEB45 /* Views */,
 				F75427192054C80A002BEB45 /* Assets */,
@@ -94,10 +119,11 @@
 		F75427182054C7F7002BEB45 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				F754273F20550558002BEB45 /* My Items */,
+				F75427262054D88E002BEB45 /* Log In */,
 				F75427252054D088002BEB45 /* Settings */,
 				F75427242054D073002BEB45 /* Puchase */,
 				F75427232054CFD3002BEB45 /* Donate */,
-				F754271B2054C859002BEB45 /* LogInViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -105,6 +131,8 @@
 		F75427192054C80A002BEB45 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				F75427332054F462002BEB45 /* SplitRow */,
+				F75427292054DA99002BEB45 /* Images */,
 				F754270D2054C7A4002BEB45 /* Assets.xcassets */,
 				F75427042054C7A4002BEB45 /* AppDelegate.swift */,
 				F75427122054C7A4002BEB45 /* Info.plist */,
@@ -143,6 +171,67 @@
 				F75427212054C88C002BEB45 /* SettingsViewController.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		F75427262054D88E002BEB45 /* Log In */ = {
+			isa = PBXGroup;
+			children = (
+				F754271B2054C859002BEB45 /* LogInViewController.swift */,
+			);
+			path = "Log In";
+			sourceTree = "<group>";
+		};
+		F75427292054DA99002BEB45 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				F75427272054DA95002BEB45 /* shirt.png */,
+				F754272A2054DB47002BEB45 /* box.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		F754272C2054DC67002BEB45 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				F754274420550971002BEB45 /* ClothingItemTableViewCell.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		F754272D2054E355002BEB45 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F754272E2054E36A002BEB45 /* UserDefaultsController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F75427302054EF9D002BEB45 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F75427312054EFA6002BEB45 /* ClothingItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F75427332054F462002BEB45 /* SplitRow */ = {
+			isa = PBXGroup;
+			children = (
+				F75427342054F462002BEB45 /* SplitRow.swift */,
+				F75427352054F462002BEB45 /* SplitRowCell.swift */,
+				F75427362054F462002BEB45 /* SplitRowCellTableView.swift */,
+				F75427372054F462002BEB45 /* SplitRowValue.swift */,
+			);
+			path = SplitRow;
+			sourceTree = "<group>";
+		};
+		F754273F20550558002BEB45 /* My Items */ = {
+			isa = PBXGroup;
+			children = (
+				F75427402055056B002BEB45 /* MyItemsViewController.swift */,
+				F75427422055093E002BEB45 /* MyItemsViewController_TableView.swift */,
+			);
+			path = "My Items";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +298,8 @@
 			files = (
 				F75427112054C7A4002BEB45 /* LaunchScreen.storyboard in Resources */,
 				F754270E2054C7A4002BEB45 /* Assets.xcassets in Resources */,
+				F754272B2054DB47002BEB45 /* box.png in Resources */,
+				F75427282054DA95002BEB45 /* shirt.png in Resources */,
 				F754270C2054C7A4002BEB45 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,11 +347,17 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-PCybernetics/Pods-PCybernetics-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ColorPickerRow/ColorPickerRow.framework",
 				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
+				"${BUILT_PRODUCTS_DIR}/ImageRow/ImageRow.framework",
+				"${BUILT_PRODUCTS_DIR}/UIColor_Hex_Swift/UIColor_Hex_Swift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ColorPickerRow.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImageRow.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIColor_Hex_Swift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -275,10 +372,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				F754271C2054C859002BEB45 /* LogInViewController.swift in Sources */,
+				F754273C2054F462002BEB45 /* SplitRowCellTableView.swift in Sources */,
+				F754274520550971002BEB45 /* ClothingItemTableViewCell.swift in Sources */,
 				F75427202054C87A002BEB45 /* PurchaseViewController.swift in Sources */,
 				F754271E2054C866002BEB45 /* DonateViewController.swift in Sources */,
 				F75427222054C88C002BEB45 /* SettingsViewController.swift in Sources */,
+				F75427412055056B002BEB45 /* MyItemsViewController.swift in Sources */,
+				F754272F2054E36A002BEB45 /* UserDefaultsController.swift in Sources */,
+				F754273A2054F462002BEB45 /* SplitRow.swift in Sources */,
 				F75427052054C7A4002BEB45 /* AppDelegate.swift in Sources */,
+				F754273B2054F462002BEB45 /* SplitRowCell.swift in Sources */,
+				F75427432055093E002BEB45 /* MyItemsViewController_TableView.swift in Sources */,
+				F75427322054EFA6002BEB45 /* ClothingItem.swift in Sources */,
+				F754273D2054F462002BEB45 /* SplitRowValue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
