@@ -13,14 +13,14 @@ extension MyItemsViewController: UITableViewDelegate, UITableViewDataSource
 {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return ClothingItem.getMyItems().count
+        return ClothingItemController.getMyItems().count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? ClothingItemTableViewCell
         {
-            cell.setClothingItem(item: ClothingItem.getMyItems()[indexPath.row])
+            cell.setClothingItem(item: ClothingItemController.getMyItems()[indexPath.row])
             return cell
         }
         return UITableViewCell()

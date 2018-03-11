@@ -39,11 +39,6 @@ class ClothingItem
                                                             ColorSpec(hex: "#9E9E9E", name: "grey"),
                                                             ColorSpec(hex: "#607D8B", name: "bluegrey")])
     
-    public static func getMyItems() -> [ClothingItem]
-    {
-        return [] //TODO
-    }
-    
     enum ClothingType: String
     {
         case Shirt

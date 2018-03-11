@@ -11,8 +11,11 @@ import UIKit
 
 class PurchaseViewController: UIViewController
 {
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        navigationItem.hidesBackButton = true
     }
 }

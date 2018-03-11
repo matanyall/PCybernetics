@@ -16,7 +16,7 @@ class MyItemsViewController: UIViewController
     
     private var hasItems: Bool
     {
-        return !ClothingItem.getMyItems().isEmpty
+        return !ClothingItemController.getMyItems().isEmpty
     }
     
     override func viewDidLoad()
@@ -25,6 +25,7 @@ class MyItemsViewController: UIViewController
         setupNoItemsLabel()
         setupAddButton()
         setupView(hasItems: hasItems)
+        navigationItem.hidesBackButton = true
     }
     
     override func viewDidAppear(_ animated: Bool)

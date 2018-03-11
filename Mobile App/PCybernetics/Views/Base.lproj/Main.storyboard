@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0HS-IS-2MD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -11,10 +11,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Donate-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" sceneMemberID="viewController">
+                <viewController title="Donate" id="9pv-A4-QxB" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -117,6 +117,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wYo-ld-5qr">
                                 <rect key="frame" x="172" y="555" width="30" height="30"/>
                                 <state key="normal" title="Go"/>
+                                <connections>
+                                    <segue destination="iy1-De-AkB" kind="show" id="LeT-bb-8dl"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HY1-bH-3av">
                                 <rect key="frame" x="67" y="334" width="240" height="145"/>
@@ -224,10 +227,88 @@
             </objects>
             <point key="canvasLocation" x="944.79999999999995" y="1517.7339901477833"/>
         </scene>
-        <!--Purchase View Controller-->
+        <!--Purchase-->
+        <scene sceneID="xz4-aF-eFe">
+            <objects>
+                <viewController title="Purchase" id="iy1-De-AkB" customClass="PurchaseViewController" customModule="PCybernetics" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oFm-fm-Ccd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Hna-7b-b7f">
+                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="141" id="n5u-9l-N8m" customClass="ClothingItemTableViewCell" customModule="PCybernetics" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="141"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="n5u-9l-N8m" id="KSy-BU-OkY">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="140.66666666666666"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KR9-Y1-8F1">
+                                                    <rect key="frame" x="15" y="22" width="103" height="96"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="103" id="kx3-WB-Tyt"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KbF-dd-6gC">
+                                                    <rect key="frame" x="139" y="22" width="221" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yi3-7X-Bre">
+                                                    <rect key="frame" x="139" y="51" width="167" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="KbF-dd-6gC" secondAttribute="trailing" id="F4b-dt-ilu"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Yi3-7X-Bre" secondAttribute="trailing" constant="54" id="N92-sd-2UF"/>
+                                                <constraint firstItem="KR9-Y1-8F1" firstAttribute="centerY" secondItem="KSy-BU-OkY" secondAttribute="centerY" id="UfH-O8-V24"/>
+                                                <constraint firstItem="Yi3-7X-Bre" firstAttribute="top" secondItem="KbF-dd-6gC" secondAttribute="bottom" constant="8" id="Wra-7i-QyE"/>
+                                                <constraint firstItem="KR9-Y1-8F1" firstAttribute="top" secondItem="KSy-BU-OkY" secondAttribute="topMargin" constant="11" id="b9e-QE-5Bh"/>
+                                                <constraint firstItem="KR9-Y1-8F1" firstAttribute="top" secondItem="KbF-dd-6gC" secondAttribute="top" id="cbC-gb-0X0"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Yi3-7X-Bre" secondAttribute="bottom" constant="58" id="g7G-Wt-T5C"/>
+                                                <constraint firstItem="KbF-dd-6gC" firstAttribute="leading" secondItem="KR9-Y1-8F1" secondAttribute="trailing" constant="21" id="h47-Dj-KHB"/>
+                                                <constraint firstItem="KR9-Y1-8F1" firstAttribute="leading" secondItem="KSy-BU-OkY" secondAttribute="leadingMargin" id="jvB-55-mwz"/>
+                                                <constraint firstItem="Yi3-7X-Bre" firstAttribute="top" secondItem="KbF-dd-6gC" secondAttribute="bottom" constant="8" symbolic="YES" id="ul3-e3-AFJ"/>
+                                                <constraint firstItem="Yi3-7X-Bre" firstAttribute="leading" secondItem="KbF-dd-6gC" secondAttribute="leading" id="vQL-N4-0cb"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="detailLabel" destination="KbF-dd-6gC" id="umb-io-Fdw"/>
+                                            <outlet property="sizeLabel" destination="Yi3-7X-Bre" id="66b-md-0hS"/>
+                                            <outlet property="thumbnail" destination="KR9-Y1-8F1" id="6RU-Wg-l4Q"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Hna-7b-b7f" secondAttribute="trailing" id="8JT-Wx-TGq"/>
+                            <constraint firstItem="Hna-7b-b7f" firstAttribute="bottom" secondItem="s0h-SP-Bwh" secondAttribute="bottom" id="MNn-SQ-O2P"/>
+                            <constraint firstItem="Hna-7b-b7f" firstAttribute="top" secondItem="s0h-SP-Bwh" secondAttribute="top" id="u94-Z0-N3V"/>
+                            <constraint firstItem="Hna-7b-b7f" firstAttribute="leading" secondItem="oFm-fm-Ccd" secondAttribute="leading" id="vN2-D5-q9v"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="s0h-SP-Bwh"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="Hna-7b-b7f" id="bVG-qz-O1Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1nH-ua-PYm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1992.8" y="1517.7339901477833"/>
+        </scene>
+        <!--Purchase-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="PurchaseViewController" customModule="PCybernetics" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Purchase" id="8rJ-Kc-sve" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -276,10 +357,10 @@
             </objects>
             <point key="canvasLocation" x="1993" y="0.0"/>
         </scene>
-        <!--Settings View Controller-->
+        <!--Settings-->
         <scene sceneID="nre-kv-9L6">
             <objects>
-                <viewController id="V1I-e2-d8y" customClass="SettingsViewController" customModule="PCybernetics" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Settings" id="V1I-e2-d8y" customClass="SettingsViewController" customModule="PCybernetics" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eLl-4m-C5x">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -311,11 +392,11 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
-        <!--First-->
+        <!--Donate-->
         <scene sceneID="2fS-CS-DDc">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Aum-Ny-VhM" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                <navigationController title="Donate" automaticallyAdjustsScrollViewInsets="NO" id="Aum-Ny-VhM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Donate" image="donate.png" id="acW-dT-cKf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kgO-c9-5Ny">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
@@ -330,11 +411,11 @@
             </objects>
             <point key="canvasLocation" x="945" y="-777"/>
         </scene>
-        <!--Second-->
+        <!--Purchase-->
         <scene sceneID="s8i-xO-gEg">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YLO-30-KNM" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Purchase" image="cashRegister.png" id="cPa-gy-q4n"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xCO-CZ-zlX">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
@@ -349,11 +430,11 @@
             </objects>
             <point key="canvasLocation" x="1993" y="-777"/>
         </scene>
-        <!--Item-->
+        <!--Settings-->
         <scene sceneID="zzz-Oe-61c">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2Ft-4o-LeB" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="uzn-dF-z33"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="settings.png" id="uzn-dF-z33"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8vg-gp-wOZ">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
@@ -371,8 +452,9 @@
     </scenes>
     <resources>
         <image name="box.png" width="96" height="96"/>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="cashRegister.png" width="32" height="32"/>
+        <image name="donate.png" width="32" height="32"/>
+        <image name="settings.png" width="32" height="32"/>
         <image name="shirt.png" width="96" height="96"/>
     </resources>
 </document>
