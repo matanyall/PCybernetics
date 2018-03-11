@@ -7,23 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1998FBC14963875A76D33527 /* Pods_PCybernetics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22EB5EE004FD7B327938357F /* Pods_PCybernetics.framework */; };
 		F75427052054C7A4002BEB45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75427042054C7A4002BEB45 /* AppDelegate.swift */; };
-		F75427072054C7A4002BEB45 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75427062054C7A4002BEB45 /* FirstViewController.swift */; };
-		F75427092054C7A4002BEB45 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75427082054C7A4002BEB45 /* SecondViewController.swift */; };
 		F754270C2054C7A4002BEB45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F754270A2054C7A4002BEB45 /* Main.storyboard */; };
 		F754270E2054C7A4002BEB45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F754270D2054C7A4002BEB45 /* Assets.xcassets */; };
 		F75427112054C7A4002BEB45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F754270F2054C7A4002BEB45 /* LaunchScreen.storyboard */; };
+		F754271C2054C859002BEB45 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F754271B2054C859002BEB45 /* LogInViewController.swift */; };
+		F754271E2054C866002BEB45 /* DonateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F754271D2054C866002BEB45 /* DonateViewController.swift */; };
+		F75427202054C87A002BEB45 /* PurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F754271F2054C87A002BEB45 /* PurchaseViewController.swift */; };
+		F75427222054C88C002BEB45 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75427212054C88C002BEB45 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		22EB5EE004FD7B327938357F /* Pods_PCybernetics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PCybernetics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A78103F08F27F08F3821E7D7 /* Pods-PCybernetics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PCybernetics.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PCybernetics/Pods-PCybernetics.debug.xcconfig"; sourceTree = "<group>"; };
+		CFFCFDC8C7661C8AC9435F52 /* Pods-PCybernetics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PCybernetics.release.xcconfig"; path = "Pods/Target Support Files/Pods-PCybernetics/Pods-PCybernetics.release.xcconfig"; sourceTree = "<group>"; };
 		F75427012054C7A4002BEB45 /* PCybernetics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PCybernetics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F75427042054C7A4002BEB45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F75427062054C7A4002BEB45 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		F75427082054C7A4002BEB45 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		F754270B2054C7A4002BEB45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F754270D2054C7A4002BEB45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F75427102054C7A4002BEB45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F75427122054C7A4002BEB45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F754271B2054C859002BEB45 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		F754271D2054C866002BEB45 /* DonateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateViewController.swift; sourceTree = "<group>"; };
+		F754271F2054C87A002BEB45 /* PurchaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseViewController.swift; sourceTree = "<group>"; };
+		F75427212054C88C002BEB45 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1998FBC14963875A76D33527 /* Pods_PCybernetics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1AD560E21B72A119C72B9726 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A78103F08F27F08F3821E7D7 /* Pods-PCybernetics.debug.xcconfig */,
+				CFFCFDC8C7661C8AC9435F52 /* Pods-PCybernetics.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B9D9ED3FC4D2E9254F6E67CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22EB5EE004FD7B327938357F /* Pods_PCybernetics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F75426F82054C7A3002BEB45 = {
 			isa = PBXGroup;
 			children = (
 				F75427032054C7A4002BEB45 /* PCybernetics */,
 				F75427022054C7A4002BEB45 /* Products */,
+				1AD560E21B72A119C72B9726 /* Pods */,
+				B9D9ED3FC4D2E9254F6E67CD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +84,65 @@
 		F75427032054C7A4002BEB45 /* PCybernetics */ = {
 			isa = PBXGroup;
 			children = (
-				F75427042054C7A4002BEB45 /* AppDelegate.swift */,
-				F75427062054C7A4002BEB45 /* FirstViewController.swift */,
-				F75427082054C7A4002BEB45 /* SecondViewController.swift */,
-				F754270A2054C7A4002BEB45 /* Main.storyboard */,
-				F754270D2054C7A4002BEB45 /* Assets.xcassets */,
-				F754270F2054C7A4002BEB45 /* LaunchScreen.storyboard */,
-				F75427122054C7A4002BEB45 /* Info.plist */,
+				F75427182054C7F7002BEB45 /* View Controllers */,
+				F754271A2054C819002BEB45 /* Views */,
+				F75427192054C80A002BEB45 /* Assets */,
 			);
 			path = PCybernetics;
+			sourceTree = "<group>";
+		};
+		F75427182054C7F7002BEB45 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F75427252054D088002BEB45 /* Settings */,
+				F75427242054D073002BEB45 /* Puchase */,
+				F75427232054CFD3002BEB45 /* Donate */,
+				F754271B2054C859002BEB45 /* LogInViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		F75427192054C80A002BEB45 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				F754270D2054C7A4002BEB45 /* Assets.xcassets */,
+				F75427042054C7A4002BEB45 /* AppDelegate.swift */,
+				F75427122054C7A4002BEB45 /* Info.plist */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		F754271A2054C819002BEB45 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F754270A2054C7A4002BEB45 /* Main.storyboard */,
+				F754270F2054C7A4002BEB45 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F75427232054CFD3002BEB45 /* Donate */ = {
+			isa = PBXGroup;
+			children = (
+				F754271D2054C866002BEB45 /* DonateViewController.swift */,
+			);
+			path = Donate;
+			sourceTree = "<group>";
+		};
+		F75427242054D073002BEB45 /* Puchase */ = {
+			isa = PBXGroup;
+			children = (
+				F754271F2054C87A002BEB45 /* PurchaseViewController.swift */,
+			);
+			path = Puchase;
+			sourceTree = "<group>";
+		};
+		F75427252054D088002BEB45 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F75427212054C88C002BEB45 /* SettingsViewController.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +152,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F75427152054C7A4002BEB45 /* Build configuration list for PBXNativeTarget "PCybernetics" */;
 			buildPhases = (
+				76547B79267CFF35C0E23367 /* [CP] Check Pods Manifest.lock */,
 				F75426FD2054C7A4002BEB45 /* Sources */,
 				F75426FE2054C7A4002BEB45 /* Frameworks */,
 				F75426FF2054C7A4002BEB45 /* Resources */,
+				77C1DD4EF6179A08FFDF63C7 /* [CP] Embed Pods Frameworks */,
+				25E64C679B1297166D3A9B7D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -94,7 +175,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Daniel Smith";
 				TargetAttributes = {
 					F75427002054C7A4002BEB45 = {
@@ -134,14 +215,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		25E64C679B1297166D3A9B7D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PCybernetics/Pods-PCybernetics-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76547B79267CFF35C0E23367 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PCybernetics-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77C1DD4EF6179A08FFDF63C7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PCybernetics/Pods-PCybernetics-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PCybernetics/Pods-PCybernetics-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F75426FD2054C7A4002BEB45 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F75427092054C7A4002BEB45 /* SecondViewController.swift in Sources */,
+				F754271C2054C859002BEB45 /* LogInViewController.swift in Sources */,
+				F75427202054C87A002BEB45 /* PurchaseViewController.swift in Sources */,
+				F754271E2054C866002BEB45 /* DonateViewController.swift in Sources */,
+				F75427222054C88C002BEB45 /* SettingsViewController.swift in Sources */,
 				F75427052054C7A4002BEB45 /* AppDelegate.swift in Sources */,
-				F75427072054C7A4002BEB45 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +318,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -188,6 +326,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -238,6 +377,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -245,6 +385,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -276,11 +417,12 @@
 		};
 		F75427162054C7A4002BEB45 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A78103F08F27F08F3821E7D7 /* Pods-PCybernetics.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8BE777GSFM;
-				INFOPLIST_FILE = PCybernetics/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PCybernetics/Assets/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.danismithproductions.PCybernetics;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -291,11 +433,12 @@
 		};
 		F75427172054C7A4002BEB45 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFFCFDC8C7661C8AC9435F52 /* Pods-PCybernetics.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8BE777GSFM;
-				INFOPLIST_FILE = PCybernetics/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PCybernetics/Assets/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.danismithproductions.PCybernetics;
 				PRODUCT_NAME = "$(TARGET_NAME)";
