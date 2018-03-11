@@ -137,7 +137,7 @@ class DonateViewController: FormViewController
             row.disabled = Condition(booleanLiteral: !checkAllRows())
             row.title = "Add"
             row.onCellSelection { _, _ in
-                self.addItem()
+                self.navigationController?.popViewController(animated: true)
             }
         }
         <<< ButtonRow("cancelButton") { row in
