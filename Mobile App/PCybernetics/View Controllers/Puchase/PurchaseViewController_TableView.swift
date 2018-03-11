@@ -13,14 +13,14 @@ extension PurchaseViewController: UITableViewDelegate, UITableViewDataSource
 {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return ClothingItemController.getAllItems().count
+        return items.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? ClothingItemTableViewCell
         {
-            cell.setClothingItem(item: ClothingItemController.getAllItems()[indexPath.row])
+            cell.setClothingItem(item: items[indexPath.row])
             return cell
         }
         return UITableViewCell()

@@ -1,0 +1,46 @@
+ item1 = {
+    "imageurl":"https://sc01.alicdn.com/kf/UT81Dy6XaxbXXagOFbXg/180772800/UT81Dy6XaxbXXagOFbXg.jpg",
+    "type":"shirt",
+    "size":"L",
+    "color":"blue",
+    "gender":"mens"
+ }
+
+   item2 = {
+    "imageurl":"http://www.patagonia.com/dis/dw/image/v2/ABBM_PRD/on/demandware.static/-/Sites-patagonia-master/default/dwdfc2386d/images/hi-res/56375_FGE.jpg?sw=750&sh=750&sm=fit&sfrm=png",
+    "type":"pants",
+    "size": {
+    	"width":32,
+    	"height":34
+    },
+    "color":"grey",
+    "gender":"mens"
+ }
+
+
+   item3 = {
+    "imageurl":"https://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=63966674",
+    "type":"shirt",
+    "size":"M",
+    "color":"red",
+    "gender":"womens"
+ }
+
+    item4 = {
+    "imageurl":"https://www.citysoccerpro.com/wp-content/uploads/2017/11/shirt.jpg",
+    "type":"shirt",
+    "size":"M",
+    "color":"orange",
+    "gender":"mens"
+ }
+
+    item2 = {
+    "imageurl":"http://c.shld.net/rpx/i/s/i/spin/image/spin_prod_1154389212?hei=345&wid=345&op_sharpen=1&qlt=85",
+    "type":"pants",
+    "size": {
+    	"width":30,
+    	"height":32
+    },
+    "color":"tan",
+    "gender":"womens"
+ }

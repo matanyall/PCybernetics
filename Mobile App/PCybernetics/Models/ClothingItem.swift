@@ -41,10 +41,10 @@ class ClothingItem
     
     enum ClothingType: String
     {
-        case Shirt
-        case Pants
+        case shirt
+        case pants
         
-        public static let options = [Shirt.rawValue, Pants.rawValue]
+        public static let options = [shirt.rawValue, pants.rawValue]
         public static let pantStyles = ["Cargo", "Dress", "Jeans", "Shorts"]
         public static let shirtSizes = ["S", "M", "L", "XL", "XXL", "XXXL"]
         public static let shirtStyles = ["Dress", "Dry Fit", "Polo", "Sweater", "Tee"]

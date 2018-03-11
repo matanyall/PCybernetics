@@ -12,6 +12,7 @@ import UIKit
 class PurchaseViewController: UIViewController
 {
     @IBOutlet weak var tableView: UITableView!
+    var items = [ClothingItem]()
     
     override func viewDidLoad()
     {
@@ -19,5 +20,11 @@ class PurchaseViewController: UIViewController
         navigationItem.hidesBackButton = true
         tableView.delegate = self
         tableView.dataSource = self
+        
+        ClothingItemController.getDummyData { items in
+            print("got items")
+            self.items = items
+            self.tableView.reloadData()
+        }
     }
 }

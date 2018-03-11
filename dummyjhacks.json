@@ -1,0 +1,29 @@
+usr1 = {
+	"userid":"1",
+    "name":"John Doe",
+    "email":"john@gmail.com",
+    "phone":"3013333333",
+    "address": {
+        "street1":"8080 E Street Rd.",
+        "street2":"",
+        "country":"USA",
+        "state":"MD",
+        "city":"College Park",
+        "zipcode":"20427",
+    }
+ }
+
+ usr2 = {
+	"userid":"2",
+    "name":"Mary Jane",
+    "email":"mary@gmail.com",
+    "phone":"3011111111",
+    "address": {
+        "street1":"2048 N Road Ave.",
+        "street2":"",
+        "country":"USA",
+        "state":"CO",
+        "city":"Denver",
+        "zipcode":"80230",
+    }
+ }

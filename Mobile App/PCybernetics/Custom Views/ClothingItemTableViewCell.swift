@@ -24,7 +24,7 @@ class ClothingItemTableViewCell: UITableViewCell
         {
             downloadAndSetImage(url: url)
         }
-        detailLabel.text = "\(clothingItem.colorStr) \(clothingItem.style)"
+        detailLabel.text = "\(clothingItem.colorStr) \(clothingItem.style) \(clothingItem.type.rawValue)"
         sizeLabel.text = clothingItem.size
     }
     

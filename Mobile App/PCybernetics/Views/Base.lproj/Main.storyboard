@@ -168,7 +168,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="140.66666666666666"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="G9x-fC-UBg">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="G9x-fC-UBg">
                                                     <rect key="frame" x="15" y="22" width="103" height="96"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="103" id="bhu-qc-BTT"/>
@@ -246,7 +246,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="140.66666666666666"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KR9-Y1-8F1">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KR9-Y1-8F1">
                                                     <rect key="frame" x="15" y="22" width="103" height="96"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="103" id="kx3-WB-Tyt"/>

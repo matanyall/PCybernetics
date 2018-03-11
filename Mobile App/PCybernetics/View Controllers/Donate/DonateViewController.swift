@@ -56,16 +56,16 @@ class DonateViewController: FormViewController
                 row.options = ClothingItem.ClothingType.options
                 }.onChange { row in
                     let pantSection = self.form.sectionBy(tag: "pantsDetailsSection")
-                    pantSection?.hidden = Condition(booleanLiteral: !self.row(withTag: "clothingType", isType: .Pants))
+                    pantSection?.hidden = Condition(booleanLiteral: !self.row(withTag: "clothingType", isType: .pants))
                     pantSection!.evaluateHidden()
                     
                     let shirtSection = self.form.sectionBy(tag: "shirtDetailsSection")
-                    shirtSection?.hidden = Condition(booleanLiteral: !self.row(withTag: "clothingType", isType: .Shirt))
+                    shirtSection?.hidden = Condition(booleanLiteral: !self.row(withTag: "clothingType", isType: .shirt))
                     shirtSection!.evaluateHidden()
                 }
             
          +++ Section("Pants Details") { section in
-            section.hidden = Condition(booleanLiteral: !self.row(withTag: "clothingType", isType: .Pants))
+            section.hidden = Condition(booleanLiteral: !self.row(withTag: "clothingType", isType: .pants))
             section.tag = "pantsDetailsSection"
         }
         <<< SplitRow<DecimalRow, DecimalRow>() { splitRow in
@@ -102,7 +102,7 @@ class DonateViewController: FormViewController
         }
         
         +++ Section("Shirt Details") { section in
-            section.hidden = Condition(booleanLiteral: !self.row(withTag: "clothingType", isType: .Shirt))
+            section.hidden = Condition(booleanLiteral: !self.row(withTag: "clothingType", isType: .shirt))
             section.tag = "shirtDetailsSection"
         }
         <<< PickerInlineRow<String>("shirtSize") { row in
