@@ -149,10 +149,10 @@
             </objects>
             <point key="canvasLocation" x="1992.8" y="735.96059113300498"/>
         </scene>
-        <!--My Items View Controller-->
+        <!--My Items-->
         <scene sceneID="3Uj-th-SDW">
             <objects>
-                <viewController id="oeU-xV-iJ3" customClass="MyItemsViewController" customModule="PCybernetics" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="My Items" id="oeU-xV-iJ3" customClass="MyItemsViewController" customModule="PCybernetics" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ceA-UT-HqL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -411,11 +411,11 @@
             </objects>
             <point key="canvasLocation" x="945" y="-777"/>
         </scene>
-        <!--Purchase-->
+        <!--Order-->
         <scene sceneID="s8i-xO-gEg">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YLO-30-KNM" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Purchase" image="cashRegister.png" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Order" image="cashRegister.png" id="cPa-gy-q4n"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xCO-CZ-zlX">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
