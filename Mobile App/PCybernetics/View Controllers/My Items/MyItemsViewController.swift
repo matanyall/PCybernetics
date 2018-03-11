@@ -26,6 +26,8 @@ class MyItemsViewController: UIViewController
         setupAddButton()
         setupView(hasItems: hasItems)
         navigationItem.hidesBackButton = true
+        tableView.delegate = self
+        tableView.dataSource = self
     }
     
     override func viewDidAppear(_ animated: Bool)

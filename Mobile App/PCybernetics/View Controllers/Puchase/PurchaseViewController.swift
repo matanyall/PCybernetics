@@ -17,5 +17,7 @@ class PurchaseViewController: UIViewController
     {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true
+        tableView.delegate = self
+        tableView.dataSource = self
     }
 }

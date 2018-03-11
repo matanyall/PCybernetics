@@ -14,4 +14,9 @@ struct ClothingItemController
     {
         return [] //TODO
     }
+    
+    public static func getAllItems() -> [ClothingItem]
+    {
+        return [] //TODO
+    }
 }

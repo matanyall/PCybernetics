@@ -36,6 +36,7 @@
 		F75B0BBC2055325800426A42 /* ClothingItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75B0BBB2055325800426A42 /* ClothingItemController.swift */; };
 		F75B0BBF2055390E00426A42 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75B0BBE2055390E00426A42 /* FilterViewController.swift */; };
 		F75B0BC120553AF700426A42 /* ShippoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75B0BC020553AF700426A42 /* ShippoController.swift */; };
+		F75B0BC32055414300426A42 /* PurchaseViewController_TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75B0BC22055414300426A42 /* PurchaseViewController_TableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		F75B0BBB2055325800426A42 /* ClothingItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothingItemController.swift; sourceTree = "<group>"; };
 		F75B0BBE2055390E00426A42 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		F75B0BC020553AF700426A42 /* ShippoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShippoController.swift; sourceTree = "<group>"; };
+		F75B0BC22055414300426A42 /* PurchaseViewController_TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseViewController_TableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +182,7 @@
 			children = (
 				F75B0BBD205538FA00426A42 /* Filter View Controller */,
 				F754271F2054C87A002BEB45 /* PurchaseViewController.swift */,
+				F75B0BC22055414300426A42 /* PurchaseViewController_TableView.swift */,
 			);
 			path = Puchase;
 			sourceTree = "<group>";
@@ -421,6 +424,7 @@
 				F75427222054C88C002BEB45 /* SettingsViewController.swift in Sources */,
 				F75427412055056B002BEB45 /* MyItemsViewController.swift in Sources */,
 				F754272F2054E36A002BEB45 /* UserDefaultsController.swift in Sources */,
+				F75B0BC32055414300426A42 /* PurchaseViewController_TableView.swift in Sources */,
 				F754273A2054F462002BEB45 /* SplitRow.swift in Sources */,
 				F75B0BBF2055390E00426A42 /* FilterViewController.swift in Sources */,
 				F75427052054C7A4002BEB45 /* AppDelegate.swift in Sources */,
