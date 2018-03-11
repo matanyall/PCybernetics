@@ -128,7 +128,7 @@
 
 2. You pay for a shipping label.
 
-3. The donors ships the clothes to you.</string>
+3. The donor ships the clothes to you.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>

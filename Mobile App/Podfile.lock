@@ -1,16 +1,22 @@
 PODS:
+  - Alamofire (4.6.0)
   - ColorPickerRow (1.2.1):
     - Eureka (>= 3.0.0)
     - UIColor_Hex_Swift (>= 3.0.0)
   - Eureka (4.0.1)
   - ImageRow (3.0.0):
     - Eureka (~> 4.0)
+  - ObjectMapper (3.1.0)
+  - SwiftMailgun (1.0.1):
+    - Alamofire
+    - ObjectMapper
   - UIColor_Hex_Swift (4.0.1)
 
 DEPENDENCIES:
   - ColorPickerRow (from `https://github.com/EurekaCommunity/ColorPickerRow`)
   - Eureka
   - ImageRow (~> 3.0)
+  - SwiftMailgun
   - UIColor_Hex_Swift
 
 EXTERNAL SOURCES:
@@ -23,11 +29,14 @@ CHECKOUT OPTIONS:
     :git: https://github.com/EurekaCommunity/ColorPickerRow
 
 SPEC CHECKSUMS:
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
   ColorPickerRow: 87dd091c54fff65cf554f79ca1556312ee66282f
   Eureka: c8bd5cc07143b6f66268c208d28a246c99b41955
   ImageRow: 048123c296de9a6ac3998c415a6706c45ce480af
+  ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
+  SwiftMailgun: 311a28057e0ced2dbcfbc8320e4aa282511877d2
   UIColor_Hex_Swift: c5ff88470499383b8fd85302d59344bb24ba9436
 
-PODFILE CHECKSUM: 3e736ceea29260c0c85ffe67ee1527823eb76138
+PODFILE CHECKSUM: d87c90ce123786f2ab771afa23cb189ec2fbed3f
 
 COCOAPODS: 1.3.1

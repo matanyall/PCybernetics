@@ -22,6 +22,7 @@ class MyItemsViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        ProcessController.runForPretend()
         setupNoItemsLabel()
         setupAddButton()
         setupView(hasItems: hasItems)

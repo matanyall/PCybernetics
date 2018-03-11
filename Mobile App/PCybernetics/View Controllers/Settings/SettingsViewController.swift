@@ -58,14 +58,14 @@ class SettingsViewController: FormViewController
         }
         <<< TextRow() { row in
             row.title = "Street Address 2"
-            row.placeholder = "12345 Filmore Pl."
+            row.placeholder = "Apt. 2"
             row.onChange { row in
                 self.curAddress.street2 = row.value
             }
         }
         <<< TextRow() { row in
             row.title = "City"
-            row.placeholder = "12345 Filmore Pl."
+            row.placeholder = "College Park"
             row.onChange { row in
                 self.curAddress.city = row.value ?? ""
             }
@@ -77,7 +77,7 @@ class SettingsViewController: FormViewController
                 self.curAddress.zip = row.value ?? ""
             }
         }
-        <<< PickerRow<String>() { row in
+        <<< PickerInlineRow<String>() { row in
             row.title = "State"
             row.options = usStates
             row.onChange { row in

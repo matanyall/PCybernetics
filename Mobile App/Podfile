@@ -10,5 +10,6 @@ target 'PCybernetics' do
   pod 'ImageRow', '~> 3.0'
   pod 'ColorPickerRow', :git => 'https://github.com/EurekaCommunity/ColorPickerRow'
   pod 'UIColor_Hex_Swift'
+  pod 'SwiftMailgun'
 
 end

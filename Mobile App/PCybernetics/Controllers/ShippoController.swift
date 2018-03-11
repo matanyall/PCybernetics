@@ -12,14 +12,72 @@ struct ShippoController
 {
     private static let testToken = "shippo_test_b27e3e43724170659d0126016592334235d35163"
     
-    private static func getShippingRates(fromAddress: Address, toAddress: Address)
+    public static func getShippingRates(fromAddress: Address, toAddress: Address, completion: @escaping (String) -> ())
     {
         let url = URL(string: "https://api.goshippo.com/shipments/")!
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.setValue("ShippoToken \(testToken)", forHTTPHeaderField: "Authorization")
-        let dict: [String : Any] = ["address_from": fromAddress.getDictionary(), "address_to": toAddress.getDictionary(), "parcels": [Parcel.defaultParcel.getDictionary()], "async": false]
+        let dict: Any = ["address_from": fromAddress.getDictionary(), "address_to": toAddress.getDictionary(), "parcels": [Parcel.defaultParcel.getDictionary()], "async": false]
+        request.httpBody = try? JSONSerialization.data(withJSONObject: dict, options: [.prettyPrinted])
+        print(try? JSONSerialization.jsonObject(with: request.httpBody!))
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            guard let data = data, error == nil else
+            {
+                return
+            }
+            if let jsonSerialized = try? JSONSerialization.jsonObject(with: data),
+                let json = jsonSerialized as? [String: Any],
+                let status = json["status"] as? String,
+                status == "SUCCESS",
+                let rates = json["rates"] as? [Any],
+                let firstRate = rates.first as? [String: Any],
+                let firstRateId = firstRate["object_id"] as? String
+            {
+                print("got rate")
+                completion(firstRateId)
+            }
+            else
+            {
+                if let jsonSerialized = try? JSONSerialization.jsonObject(with: data),
+                    let json = jsonSerialized as? [String: Any]
+                {
+                    print(jsonSerialized)
+                }
+            }
+            
+        }
+        task.resume()
     }
+    
+    public static func getShippingLabel(fromTransactionId transactionId: String, completion: @escaping (URL) -> ())
+    {
+        let url = URL(string: "https://api.goshippo.com/shipments/")!
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.setValue("ShippoToken \(testToken)", forHTTPHeaderField: "Authorization")
+        let dict: [String: Any] = ["rate": transactionId,
+                                   "label_file_type": "PDF",
+                                   "async": false]
+        request.httpBody = try? JSONSerialization.data(withJSONObject: dict)
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            guard let data = data, error == nil else
+            {
+                return
+            }
+            
+            if let jsonSerialized = try? JSONSerialization.jsonObject(with: data),
+                let json = jsonSerialized as? [String: Any],
+                let labelUrlStr = json["label_url"] as? String,
+                let labelUrl = URL(string: labelUrlStr)
+            {
+                print("got label url")
+                completion(labelUrl)
+            }
+        }
+        task.resume()
+    }
+    
     
     struct Address
     {
