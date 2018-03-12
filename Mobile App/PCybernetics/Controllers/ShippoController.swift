@@ -10,7 +10,7 @@ import Foundation
 
 struct ShippoController
 {
-    private static let testToken = "shippo_test_b27e3e43724170659d0126016592334235d35163"
+    private static let testToken = ""
     
     public static func getShippingRates(fromAddress: Address, toAddress: Address, completion: @escaping (String) -> ())
     {
